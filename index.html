@@ -28,10 +28,12 @@
 <body>
   <div class="container">
     <h1>llm.css</h1>
-    <p><b>llm.css</b> is a small set of CSS styles that you can give to an LLM or coding agent to steer the way it styles a web page. You can see what it looks like on <a href="demo.html">our demo page</a>.</p>
+    <p><b>llm.css</b> is a small set of CSS styles that you can give to an LLM or coding agent to steer the way it styles a web page. You can see what it looks like on <a href="demo.html">our demo page</a>. You can also visit <a href="https://github.com/jhonkaman/llm-css">the GitHub repo</a>.</p>
 
+    <h2>Origin</h2>
     <p>I created llm.css by asking ChatGPT to create a set of CSS variables based on Tailwind. Then I asked it to create a set of rules using those variables.</p>
 
+    <h2>Usage</h2>
     <p>I think there are 4 ways you can use this project:</p>
     <ol>
       <li>At a minimum, I think you can probably give an LLM just the CSS variables and that should help steer it.</li>
@@ -40,6 +42,7 @@
       <li>If you just want to take this idea as inspiration, you're free to come up with your own CSS variable names, values, and rules.</li>
     </ol>
 
+    <h2>Code</h2>
     <p>Here are the core CSS variables:</p>
 <div class="code-block-wrapper"><pre><code>
 :root {
@@ -83,14 +86,22 @@
     <div class="code-block-wrapper full-code"><pre><code></code></pre></div>
   </div>
 
+  <footer style="text-align: center;">
+    <small>&copy; 2026 Javier Alvarado.</small>
+  </footer>
+
 <script>
   // Add copy buttons to all code blocks
   document.querySelectorAll('.code-block-wrapper').forEach((wrapper, index) => {
+    const code = wrapper.querySelector('code');
+
+    // Trim leading and trailing whitespace
+    code.textContent = code.textContent.trim();
+
     const btn = document.createElement('button');
     btn.className = 'copy-btn';
     btn.textContent = 'Copy';
     btn.addEventListener('click', () => {
-      const code = wrapper.querySelector('code');
       navigator.clipboard.writeText(code.textContent).then(() => {
         btn.textContent = 'Copied!';
         btn.classList.add('copied');
