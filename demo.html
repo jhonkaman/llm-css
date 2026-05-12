@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>llm.css Demo</title>
+
+  <link rel="stylesheet" href="llm.css">
+  <link rel="stylesheet" href="color-palette.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>llm.css Demo</h1>
+    <h2>Color Palette</h2>
+    <div class="color-palette">
+      <div class="color-swatch">
+        <div class="color-box" style="background-color: var(--color-bg); border: 1px solid var(--color-border);"></div>
+        <div class="color-info">
+          <div class="color-name">Background</div>
+          <div class="color-hex">#ffffff</div>
+        </div>
+      </div>
+      <div class="color-swatch">
+        <div class="color-box" style="background-color: var(--color-surface);"></div>
+        <div class="color-info">
+          <div class="color-name">Surface</div>
+          <div class="color-hex">#f9fafb</div>
+        </div>
+      </div>
+      <div class="color-swatch">
+        <div class="color-box" style="background-color: var(--color-text);"></div>
+        <div class="color-info">
+          <div class="color-name">Text</div>
+          <div class="color-hex">#111827</div>
+        </div>
+      </div>
+      <div class="color-swatch">
+        <div class="color-box" style="background-color: var(--color-muted);"></div>
+        <div class="color-info">
+          <div class="color-name">Muted</div>
+          <div class="color-hex">#6b7280</div>
+        </div>
+      </div>
+      <div class="color-swatch">
+        <div class="color-box" style="background-color: var(--color-border);"></div>
+        <div class="color-info">
+          <div class="color-name">Border</div>
+          <div class="color-hex">#d1d5db</div>
+        </div>
+      </div>
+      <div class="color-swatch">
+        <div class="color-box" style="background-color: var(--color-primary);"></div>
+        <div class="color-info">
+          <div class="color-name">Primary</div>
+          <div class="color-hex">#475569</div>
+        </div>
+      </div>
+    </div>
+    <h1>Heading level 1</h1>
+    <h2>Heading level 2</h2>
+    <h3>Heading level 3</h3>
+    <h4>Heading level 4</h4>
+    <h5>Heading level 5</h5>
+    <h6>Heading level 6</h6>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eaque molestias eos, nostrum perferendis aut minus, optio laudantium aliquam nesciunt pariatur laboriosam aperiam tempora placeat debitis! Quae eos dolor error?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi vel, veritatis magni similique labore provident perspiciatis sequi consequuntur quisquam ratione? Accusamus vel quibusdam ea recusandae ut, assumenda dicta dolorum dolorem?</p>
+
+    <ul>
+      <li>Item</li>
+      <li>Item
+      <ul><li>Subitem</li></ul>
+      </li>
+      <li>Item</li>
+    </ul>
+
+    <ol>
+      <li>Item</li>
+      <li>Item
+      <ol><li>Subitem</li></ol>
+      </li>
+      <li>Item</li>
+    </ol>
+
+    <a href="" class="button">Anchor</a>
+    <a href="" class="button-outline">Anchor</a>
+    <button type="button">Button</button>
+    <button type="button" disabled>Button</button>
+    <button type="button" class="button-outline">Button</button>
+    <button type="button" class="button-outline" disabled>Button</button>
+
+<pre class="code"><code>p {
+  color: red;
+}</code></pre>
+
+    <p><strong>The strong tag is rendered as bold text.</strong></p>
+    <p><b>The b tag is rendered as bold text.</b></p>
+    <p><em>This em tag is rendered as italicized text.</em></p>
+    <p><i>This i tag is rendered as italicized text.</i></p>
+    <p>Use the mark tag to <mark>highlight</mark> text.</p>
+    <p>Use the <code>code</code> tag for inline code.</p>
+    <p>Use the kbd tag for keyboard shortcuts, like <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd>.</p>
+    <p><small>Use the small tag for text is meant to be treated as fine print.</small></p>
+    <p><del>Use the del tag for deleted text.</del></p>
+    <p><s>Use the s tag for text that is no longer accurate.</s></p>
+    <p><ins>Use the ins tag for text that is meant to be treated as an addition to the document.</ins></p>
+    <p><u>Th u tag will render as underlined.</u></p>
+    <p>Use the sub tag for subscripts, like this: C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>.</p>
+    <p>Use the sup tag for superscripts, like this: 5<sup>th</sup>.</p>
+    <p>Use the var tag for variables, like this: <var>y</var> = <var>m</var><var>x</var> + <var>b</var>.</p>
+
+    <details>
+      <summary>Summary text</summary>
+      <p>Details text</p>
+    </details>
+
+    <details open>
+      <summary>Summary text</summary>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nisi, aliquid deleniti delectus neque, rem iusto distinctio soluta saepe consequuntur aperiam praesentium voluptatem, illo optio quisquam iste culpa placeat a.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, ut. Consequatur doloribus officia eum provident veniam, aut voluptas cupiditate possimus neque totam quod atque accusantium ipsum distinctio. Magni, voluptas temporibus?</p>
+       <ul>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+       </ul>
+    </details>
+
+    <form onsubmit="return false;">
+      <label for="select-id">Select</label>
+      <select name="" id="select-id">
+        <option value="">Option 1</option>
+        <option value="">Option 2</option>
+      </select>
+      <label for="select-disabled">Select (disabled)</label>
+      <select name="" id="select-disabled" disabled>
+        <option value="">Option 1</option>
+        <option value="">Option 2</option>
+      </select>
+      <label for='text'>Text</label>
+      <div style="display: flex; gap: .25rem; align-items: baseline;">
+        <input type='text' name='text' id='text' placeholder='Text'>
+        <button>Test</button>
+      </div>
+      <label for='id'>Text (read only)</label>
+      <input readonly name='id' id='id' value='04D6H89Z'>
+      <label for='disabled'>Text (disabled)</label>
+      <input disabled name='disabled' id='disabled' placeholder='Text'>
+        <label for='email'>Email</label>
+        <input type='email' name='email' id='email' placeholder='Email'>
+        <label for='password'>Password</label>
+        <input type='password' name='password' id='password' placeholder='Password'>
+      <label for='about'>Text Area</label>
+      <textarea name='about' id='about' placeholder='I am a textarea...'></textarea>
+      <label for='textarea-disabled'>Text Area (disabled)</label>
+      <textarea name='about' id='textarea-disabled' placeholder='I am a textarea...' disabled></textarea>
+      <!-- file -->
+      <label for="file">Choose a file</label>
+      <input type="file" name="" id="file">
+      <label for="file-disabled">Choose a file (disabled)</label>
+      <input type="file" name="" id="file-disabled" disabled>
+      <!-- radio -->
+      <label>Choose a radio:</label>
+      <div>
+        <div>
+          <input type='radio' id='unselected-radio' name='radios' value='unselected'>
+          <label for='unselected-radio'>Unselected</label>
+        </div>
+        <div>
+          <input type='radio' id='selected-radio' name='radios' value='selected' checked>
+          <label for='selected-radio'>Selected</label>
+        </div>
+        <div>
+          <input type='radio' id='disabled-radio' name='radios' value='disabled' disabled>
+          <label for='disabled-radio'>Disabled</label>
+        </div>
+      </div>
+      <br>
+      <!-- checkboxes -->
+      <label>Checkboxes</label>
+      <div>
+        <div>
+          <input type='checkbox' name='unchecked' id='unchecked'>
+          <label for='unchecked'>Unchecked</label>
+        </div>
+        <div>
+          <input type='checkbox' name='remember' id='remember' checked>
+          <label for='remember'>Checked</label>
+        </div>
+        <div>
+          <input type='checkbox' name='disabled1' id='disabled1' disabled>
+          <label for='disabled1'>Disabled</label>
+        </div>
+        <div>
+          <input type='checkbox' name='disabled2' id='disabled2' disabled checked>
+          <label for='disabled2'>Disabled (checked)</label>
+        </div>
+      </div>
+
+
+        <label for="range">Range</label>
+        <input type="range" id="range" name="range" />
+
+      <label for="progress">Progress</label>
+      <progress id="progress" max="100" value="50">50%</progress>
+    </form>
+
+    <table>
+      <caption>Caption text</caption>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+      </tr>
+      <tr>
+        <td>Cell 1</td>
+        <td>Cell 2</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
