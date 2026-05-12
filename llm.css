@@ -133,6 +133,7 @@ label {
 input[type="checkbox"] + label,
 input[type="radio"] + label {
   display: inline;
+  vertical-align: middle;
   /* margin-bottom: 0; */
   /* margin-left: var(--space-2); */
   font-weight: normal;
@@ -141,6 +142,8 @@ input[type="radio"] + label {
 input[type="checkbox"],
 input[type="radio"] {
   width: initial;
+  vertical-align: middle;
+  margin: 0;
 }
 
 input[type="checkbox"],
