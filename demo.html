@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>llm.css Demo</title>
+  <title>llm.css - Demo</title>
 
   <link rel="stylesheet" href="llm.css">
   <link rel="stylesheet" href="color-palette.css">
@@ -12,7 +12,7 @@
 <body>
   <div class="container">
     <h1>llm.css Demo</h1>
-    <p>Here is a demo of llm.css. You can go back to the <a href="./">home page</a> when you're done viewing this page.</p>
+    <p>Here is a demo of <span class="highlight">llm.css</span>. You can go back to the <a href="./">home page</a> when you're done viewing this page.</p>
     <h2>Color Palette</h2>
     <div class="color-palette">
       <div class="color-swatch">
@@ -84,13 +84,14 @@
       <li>Item</li>
     </ol>
 
+<div style="display: flex; gap: 4px; flex-wrap: wrap;">
     <a href="" class="button">Anchor</a>
     <a href="" class="button-outline">Anchor</a>
     <button type="button">Button</button>
     <button type="button" disabled>Button</button>
     <button type="button" class="button-outline">Button</button>
     <button type="button" class="button-outline" disabled>Button</button>
-
+  </div>
 <pre class="code"><code>p {
   color: red;
 }</code></pre>
@@ -221,15 +222,44 @@
         <td>Cell 2</td>
       </tr>
     </table>
+
+    <div class="text-start">
+  <h3>Test heading</h3>
+  <a href="" class="button">Test Link</a>
+</div>
+
+<div class="text-center">
+  <h3>Test heading</h3>
+  <a href="" class="button">Test Link</a>
+</div>
+
+<div class="text-end">
+  <h3>Test heading</h3>
+  <a href="" class="button">Test Link</a>
+</div>
+
+    <p class="uppercase">This is uppercase.</p>
+    <p class="lowercase">This is lowercase.</p>
+    <p class="capitalize">This is capitalized.</p>
+    <p class="nocase">This has no text transform.</p>
+    <p class="italic">This is italic.</p>
+    <em class="not-italic">This is not italic.</em>
+    <p class="bold">This is bold.</p>
+    <b class="not-bold">This is not bold.</b>
   </div>
 
   <footer style="text-align: center;">
     <p><small><a href="#top" style="margin-left: 1rem;">Back to top</a></small></p>
-    <small>&copy; 2026 Javier Alvarado.</small>
+    <small>&copy; 2026 Javier Alvarado. Made with ⚡️ on planet Earth.</small>
   </footer>
 
   <script>
     document.getElementById('indeterminate').indeterminate = true;
+
+    // Add asterisk to title if URL doesn't contain jhonkaman
+    if (!window.location.href.includes('jhonkaman')) {
+      document.title = '🟢 ' + document.title;
+    }
   </script>
 </body>
 </html>

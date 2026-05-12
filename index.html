@@ -27,7 +27,7 @@
 
 <body>
   <div class="container" id="top">
-    <h1>llm.css</h1>
+    <h1>llm.css: Styles for LLMs and agents</h1>
     <p><b>llm.css</b> is a small set of CSS styles that you can give to an LLM or coding agent to steer the way it styles a web page. You can see what it looks like on <a href="demo.html">our demo page</a>. You can also visit <a href="https://github.com/jhonkaman/llm-css">the GitHub repo</a>.</p>
 
     <b>Table of Contents</b>
@@ -100,7 +100,7 @@
 
   <footer style="text-align: center;">
     <p><small><a href="#top" style="margin-left: 1rem;">Back to top</a></small></p>
-    <small>&copy; 2026 Javier Alvarado.</small>
+    <small>&copy; 2026 Javier Alvarado. Made with ⚡️ on planet Earth.</small>
   </footer>
 
 <script>
@@ -136,6 +136,11 @@
         preCodeBlocks[1].textContent = css;
       }
     });
+
+  // Add asterisk to title if URL doesn't contain jhonkaman
+  if (!window.location.href.includes('jhonkaman')) {
+    document.title = '🟢 ' + document.title;
+  }
 </script>
 </body>
 </html>
