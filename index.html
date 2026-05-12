@@ -26,14 +26,22 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container" id="top">
     <h1>llm.css</h1>
     <p><b>llm.css</b> is a small set of CSS styles that you can give to an LLM or coding agent to steer the way it styles a web page. You can see what it looks like on <a href="demo.html">our demo page</a>. You can also visit <a href="https://github.com/jhonkaman/llm-css">the GitHub repo</a>.</p>
 
-    <h2>Origin</h2>
-    <p>I created llm.css by asking ChatGPT to create a set of CSS variables based on Tailwind. Then I asked it to create a set of rules using those variables.</p>
+    <b>Table of Contents</b>
+    <ul>
+      <li><a href="#origin">Origin</a></li>
+      <li><a href="#usage">Usage</a></li>
+      <li><a href="#code">Code</a></li>
+      <li><a href="#cdn">CDN</a></li>
+    </ul>
 
-    <h2>Usage</h2>
+    <h2 id="origin">Origin</h2>
+    <p>I created llm.css by asking ChatGPT to create a set of CSS variables based on Tailwind. Then I asked it to create a set of rules using those variables. The project was inspired by Tailwind, Open Props, and various classless and class-light CSS frameworks.</p>
+
+    <h2 id="usage">Usage</h2>
     <p>I think there are 4 ways you can use this project:</p>
     <ol>
       <li>At a minimum, I think you can probably give an LLM just the CSS variables and that should help steer it.</li>
@@ -42,7 +50,7 @@
       <li>If you just want to take this idea as inspiration, you're free to come up with your own CSS variable names, values, and rules.</li>
     </ol>
 
-    <h2>Code</h2>
+    <h2 id="code">Code</h2>
     <p>Here are the core CSS variables:</p>
 <div class="code-block-wrapper"><pre><code>
 :root {
@@ -84,9 +92,14 @@
 
     <p>And here is <a href="llm.css">the full code</a> (you can also <a href="llm.css" download>download the full code</a>):</p>
     <div class="code-block-wrapper full-code"><pre><code></code></pre></div>
+
+    <h2 id="cdn">CDN</h2>
+    <p>You can also use the file through a CDN. If you're using it with an LLM, you still might want to give it the code so it knows what's inside (or you might want to at least mention it's a class-light CSS framework). If you're using it with an agent, you might want to have it fetch the file and read the contents of the file first before using it.</p>
+    <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/jhonkaman/llm-css/llm.css&quot;&gt;</code></pre>
   </div>
 
   <footer style="text-align: center;">
+    <p><small><a href="#top" style="margin-left: 1rem;">Back to top</a></small></p>
     <small>&copy; 2026 Javier Alvarado.</small>
   </footer>
 

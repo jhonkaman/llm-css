@@ -99,9 +99,9 @@
     <p><b>The b tag is rendered as bold text.</b></p>
     <p><em>This em tag is rendered as italicized text.</em></p>
     <p><i>This i tag is rendered as italicized text.</i></p>
-    <p>Use the mark tag to <mark>highlight</mark> text.</p>
     <p>Use the <code>code</code> tag for inline code.</p>
     <p>Use the kbd tag for keyboard shortcuts, like <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd>.</p>
+    <p>Use the mark tag to <mark>highlight</mark> text.</p>
     <p><small>Use the small tag for text is meant to be treated as fine print.</small></p>
     <p><del>Use the del tag for deleted text.</del></p>
     <p><s>Use the s tag for text that is no longer accurate.</s></p>
@@ -189,6 +189,10 @@
           <label for='remember'>Checked</label>
         </div>
         <div>
+          <input type='checkbox' name='indeterminate' id='indeterminate'>
+          <label for='indeterminate'>Indeterminate</label>
+        </div>
+        <div>
           <input type='checkbox' name='disabled1' id='disabled1' disabled>
           <label for='disabled1'>Disabled</label>
         </div>
@@ -218,5 +222,14 @@
       </tr>
     </table>
   </div>
+
+  <footer style="text-align: center;">
+    <p><small><a href="#top" style="margin-left: 1rem;">Back to top</a></small></p>
+    <small>&copy; 2026 Javier Alvarado.</small>
+  </footer>
+
+  <script>
+    document.getElementById('indeterminate').indeterminate = true;
+  </script>
 </body>
 </html>
