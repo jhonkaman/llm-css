@@ -29,16 +29,10 @@
   --color-primary: #475569;
   --color-accent: #475569;
 
-  /* Radius */
+  /* Other */
   --radius: 0.5rem;
-
-  /* Shadow */
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06);
-
-  /* Borders */
   --border: 1px;
-
-  /* Layout */
   --container: 960px;
 }
 
@@ -201,14 +195,11 @@ button, .button, .button-outline {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   padding: 0.65rem 1rem;
   border-radius: var(--radius);
-
   font: inherit;
   text-decoration: none;
   cursor: pointer;
-
   transition: 120ms ease;
 }
 
@@ -237,54 +228,19 @@ select:disabled {
 }
 
 /* Utilities */
-.uppercase {
-  text-transform: uppercase !important;
-}
+.uppercase { text-transform: uppercase !important; }
+.lowercase { text-transform: lowercase !important; }
+.capitalize { text-transform: capitalize !important; }
+.nocase { text-transform: none !important; }
 
-.lowercase {
-  text-transform: lowercase !important;
-}
+.italic { font-style: italic !important; }
+.not-italic { font-style: normal !important; }
 
-.capitalize {
-  text-transform: capitalize !important;
-}
+.bold { font-weight: bold !important; }
+.bolder { font-weight: bolder !important; }
+.lighter { font-weight: lighter !important; }
+.not-bold { font-weight: normal !important; }
 
-.nocase {
-  text-transform: none !important;
-}
-
-.italic {
-  font-style: italic !important;
-}
-
-.not-italic {
-  font-style: normal !important;
-}
-
-.bold {
-  font-weight: bold !important;
-}
-
-.bolder {
-  font-weight: bolder !important;
-}
-
-.lighter {
-  font-weight: lighter !important;
-}
-
-.not-bold {
-  font-weight: normal !important;
-}
-
-.text-center {
-  text-align: center !important;
-}
-
-.text-start {
-  text-align: start !important;
-}
-
-.text-end {
-  text-align: end !important;
-}
+.text-center { text-align: center !important; }
+.text-start { text-align: start !important; }
+.text-end { text-align: end !important; }
