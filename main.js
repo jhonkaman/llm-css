@@ -23,6 +23,8 @@ document.querySelectorAll('.code-block-wrapper').forEach((wrapper, index) => {
   wrapper.appendChild(btn);
 });
 
+
+
 // Fetch and inject llm.css into second code block
 fetch('llm.css')
   .then(response => response.text())
@@ -32,6 +34,8 @@ fetch('llm.css')
       preCodeBlocks[1].textContent = css;
     }
   });
+
+
 
 // Add asterisk to title if URL doesn't contain jhonkaman
 if (!window.location.href.includes('jhonkaman')) {

@@ -12,7 +12,10 @@
 <body>
   <div class="container">
     <h1>llm.css Demo</h1>
+
     <p>Here is a demo of <span class="highlight">llm.css</span>. You can go back to the <a href="./">home page</a> when you're done viewing this page.</p>
+
+    <!-- COLORS -->
     <h2>Color Palette</h2>
     <div class="color-palette">
       <div class="color-swatch">
@@ -22,6 +25,7 @@
           <div class="color-hex">#ffffff</div>
         </div>
       </div>
+
       <div class="color-swatch">
         <div class="color-box" style="background-color: var(--color-surface);"></div>
         <div class="color-info">
@@ -29,6 +33,7 @@
           <div class="color-hex">#f9fafb</div>
         </div>
       </div>
+
       <div class="color-swatch">
         <div class="color-box" style="background-color: var(--color-text);"></div>
         <div class="color-info">
@@ -36,6 +41,7 @@
           <div class="color-hex">#111827</div>
         </div>
       </div>
+
       <div class="color-swatch">
         <div class="color-box" style="background-color: var(--color-muted);"></div>
         <div class="color-info">
@@ -43,6 +49,7 @@
           <div class="color-hex">#6b7280</div>
         </div>
       </div>
+
       <div class="color-swatch">
         <div class="color-box" style="background-color: var(--color-border);"></div>
         <div class="color-info">
@@ -50,6 +57,7 @@
           <div class="color-hex">#d1d5db</div>
         </div>
       </div>
+
       <div class="color-swatch">
         <div class="color-box" style="background-color: var(--color-primary);"></div>
         <div class="color-info">
@@ -58,6 +66,8 @@
         </div>
       </div>
     </div>
+
+    <!-- HEADINGS -->
     <h1>Heading level 1</h1>
     <h2>Heading level 2</h2>
     <h3>Heading level 3</h3>
@@ -65,9 +75,11 @@
     <h5>Heading level 5</h5>
     <h6>Heading level 6</h6>
 
+    <!-- PARAGRAPHS -->
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eaque molestias eos, nostrum perferendis aut minus, optio laudantium aliquam nesciunt pariatur laboriosam aperiam tempora placeat debitis! Quae eos dolor error?</p>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi vel, veritatis magni similique labore provident perspiciatis sequi consequuntur quisquam ratione? Accusamus vel quibusdam ea recusandae ut, assumenda dicta dolorum dolorem?</p>
 
+    <!-- LISTS -->
     <ul>
       <li>Item</li>
       <li>Item
@@ -84,18 +96,22 @@
       <li>Item</li>
     </ol>
 
-<div style="display: flex; gap: 4px; flex-wrap: wrap;">
-    <a href="" class="button">Anchor</a>
-    <a href="" class="button-outline">Anchor</a>
-    <button type="button">Button</button>
-    <button type="button" disabled>Button</button>
-    <button type="button" class="button-outline">Button</button>
-    <button type="button" class="button-outline" disabled>Button</button>
-  </div>
+    <!-- BUTTONS -->
+    <div style="display: flex; gap: 4px; flex-wrap: wrap;">
+      <a href="" class="button">Anchor</a>
+      <a href="" class="button-outline">Anchor</a>
+      <button type="button">Button</button>
+      <button type="button" disabled>Button</button>
+      <button type="button" class="button-outline">Button</button>
+      <button type="button" class="button-outline" disabled>Button</button>
+    </div>
+
+  <!-- CODE -->
 <pre class="code"><code>p {
   color: red;
 }</code></pre>
 
+    <!-- INLINE -->
     <p>Use the <a href="#">anchor</a> tag for links.</p>
     <p><strong>The strong tag is rendered as bold text.</strong></p>
     <p><b>The b tag is rendered as bold text.</b></p>
@@ -113,6 +129,13 @@
     <p>Use the sup tag for superscripts, like this: 5<sup>th</sup>.</p>
     <p>Use the var tag for variables, like this: <var>y</var> = <var>m</var><var>x</var> + <var>b</var>.</p>
 
+    <!-- BLOCKQUOTES -->
+    <blockquote>
+      <p>A blockquote represents a section that is quoted from another source. It can contain multiple paragraphs and is commonly used to highlight important quotes or extended text passages.</p>
+      <p>— Author Name</p>
+    </blockquote>
+
+    <!-- DETAILS -->
     <details>
       <summary>Summary text</summary>
       <p>Details text</p>
@@ -129,42 +152,66 @@
        </ul>
     </details>
 
+    <!-- DIALOG -->
+    <button type="button" onclick="document.getElementById('demo-dialog').showModal()" style="margin-block: 2rem;">Open Dialog</button>
+    <dialog id="demo-dialog">
+      <h2>Dialog Example</h2>
+      <p>This is a dialog element. It displays content in a modal overlay and can be closed by the user.</p>
+      <div style="display: flex; gap: 0.5rem; justify-content: flex-end;">
+        <button type="button" onclick="document.getElementById('demo-dialog').close()">Close</button>
+      </div>
+    </dialog>
+
+    <!-- FORMS -->
     <form onsubmit="return false;">
+      <!-- select -->
       <label for="select-id">Select</label>
       <select name="" id="select-id">
         <option value="">Option 1</option>
         <option value="">Option 2</option>
       </select>
+
       <label for="select-disabled">Select (disabled)</label>
       <select name="" id="select-disabled" disabled>
         <option value="">Option 1</option>
         <option value="">Option 2</option>
       </select>
+
+      <!-- input -->
       <label for='text'>Text</label>
       <div style="display: flex; gap: .25rem; align-items: baseline;">
         <input type='text' name='text' id='text' placeholder='Text'>
         <button>Test</button>
       </div>
+
       <label for='id'>Text (read only)</label>
       <input readonly name='id' id='id' value='04D6H89Z'>
+
       <label for='disabled'>Text (disabled)</label>
       <input disabled name='disabled' id='disabled' placeholder='Text'>
-        <label for='email'>Email</label>
-        <input type='email' name='email' id='email' placeholder='Email'>
-        <label for='password'>Password</label>
-        <input type='password' name='password' id='password' placeholder='Password'>
+
+      <label for='email'>Email</label>
+      <input type='email' name='email' id='email' placeholder='Email'>
+
+      <label for='password'>Password</label>
+      <input type='password' name='password' id='password' placeholder='Password'>
+
       <label for='about'>Text Area</label>
       <textarea name='about' id='about' placeholder='I am a textarea...'></textarea>
+
       <label for='textarea-disabled'>Text Area (disabled)</label>
       <textarea name='about' id='textarea-disabled' placeholder='I am a textarea...' disabled></textarea>
+
       <!-- file -->
       <label for="file">Choose a file</label>
       <input type="file" name="" id="file">
+
       <label for="file-disabled">Choose a file (disabled)</label>
       <input type="file" name="" id="file-disabled" disabled>
+
       <!-- radio -->
-      <label>Choose a radio:</label>
-      <div>
+      <fieldset>
+        <legend>Choose a radio:</legend>
         <div>
           <input type='radio' id='unselected-radio' name='radios' value='unselected'>
           <label for='unselected-radio'>Unselected</label>
@@ -177,11 +224,11 @@
           <input type='radio' id='disabled-radio' name='radios' value='disabled' disabled>
           <label for='disabled-radio'>Disabled</label>
         </div>
-      </div>
-      <br>
+      </fieldset>
+
       <!-- checkboxes -->
-      <label>Checkboxes</label>
-      <div>
+      <fieldset>
+        <legend>Checkboxes</legend>
         <div>
           <input type='checkbox' name='unchecked' id='unchecked'>
           <label for='unchecked'>Unchecked</label>
@@ -202,16 +249,16 @@
           <input type='checkbox' name='disabled2' id='disabled2' disabled checked>
           <label for='disabled2'>Disabled (checked)</label>
         </div>
-      </div>
+      </fieldset>
 
-
-        <label for="range">Range</label>
-        <input type="range" id="range" name="range" />
+      <label for="range">Range</label>
+      <input type="range" id="range" name="range" />
 
       <label for="progress">Progress</label>
       <progress id="progress" max="100" value="50">50%</progress>
     </form>
 
+    <!-- TABLES -->
     <table>
       <caption>Caption text</caption>
       <tr>
@@ -224,33 +271,34 @@
       </tr>
     </table>
 
+    <!-- UTILITIES -->
     <div class="text-start">
-  <h3>Test heading</h3>
-  <a href="" class="button">Test Link</a>
-</div>
+      <h3>Test heading</h3>
+      <a href="" class="button">Test Link</a>
+    </div>
 
-<div class="text-center">
-  <h3>Test heading</h3>
-  <a href="" class="button">Test Link</a>
-</div>
+    <div class="text-center">
+      <h3>Test heading</h3>
+      <a href="" class="button">Test Link</a>
+    </div>
 
-<div class="text-end">
-  <h3>Test heading</h3>
-  <a href="" class="button">Test Link</a>
-</div>
+    <div class="text-end">
+      <h3>Test heading</h3>
+      <a href="" class="button">Test Link</a>
+    </div>
 
     <p class="uppercase">This is uppercase.</p>
     <p class="lowercase">This is lowercase.</p>
     <p class="capitalize">This is capitalized.</p>
     <p class="nocase">This has no text transform.</p>
     <p class="italic">This is italic.</p>
-    <em class="not-italic">This is not italic.</em>
+    <i class="not-italic">This is not italic.</i>
     <p class="bold">This is bold.</p>
     <b class="not-bold">This is not bold.</b>
   </div>
 
-  <footer style="text-align: center;">
-    <p><small><a href="#top" style="margin-left: 1rem;">Back to top</a></small></p>
+  <footer class="text-center">
+    <p><small><a href="#top">Back to top</a></small></p>
     <small>&copy; 2026 Javier Alvarado. Made with ⚡️ on planet Earth.</small>
   </footer>
 
