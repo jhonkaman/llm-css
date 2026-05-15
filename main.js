@@ -37,7 +37,7 @@ fetch('llm.css')
 
 
 
-// Add asterisk to title if URL doesn't contain jhonkaman
-if (!window.location.href.includes('jhonkaman')) {
+// Add asterisk to title if URL contains localhost or 127.0.0.1
+if (window.location.href.includes('localhost') || window.location.href.includes('127.0.0.1')) {
   document.title = '🟢 ' + document.title;
 }
