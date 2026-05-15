@@ -55,6 +55,30 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: var(--space-4);
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
 ul, ol {
   padding-left: 1.5rem;
 }
@@ -220,10 +244,6 @@ dialog > :first-child {
   margin-top: .83em;
 }
 
-dialog::backdrop {
-  /* background: rgba(0, 0, 0, 0.5); */
-}
-
 dialog:focus-visible {
   outline: 2px solid var(--color-surface);
   outline-offset: 1px;
@@ -254,13 +274,11 @@ th {
 button, .button, .button-outline {
   border-radius: var(--radius);
   cursor: pointer;
-  display: inline-flex;
+  display: inline-block;
   font: inherit;
   padding: 0.65rem 1rem;
   text-decoration: none;
   transition: 120ms ease;
-  align-items: center;
-  justify-content: center;
 }
 
 button, .button {
