@@ -134,7 +134,7 @@ input, textarea, select {
   font: inherit;
   border: var(--border) solid var(--color-border);
   border-radius: var(--radius);
-  background: white;
+  background: transparent;
   color: var(--color-text);
 }
 

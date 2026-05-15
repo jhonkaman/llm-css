@@ -26,8 +26,9 @@
 </head>
 
 <body>
-  <div class="container" id="top">
+  <div class="container">
     <h1>llm.css: Styles for LLMs and agents</h1>
+
     <p><b>llm.css</b> is a small set of CSS styles that you can give to an LLM or coding agent to steer the way it styles a web page. You can see what it looks like on <a href="demo.html">our demo page</a>. You can also visit <a href="https://github.com/jhonkaman/llm-css">the GitHub repo</a>.</p>
 
     <b>Table of Contents</b>
@@ -36,6 +37,7 @@
       <li><a href="#usage">Usage</a></li>
       <li><a href="#code">Code</a></li>
       <li><a href="#cdn">CDN</a></li>
+      <li><a href="#dark-mode">Dark Mode</a></li>
     </ul>
 
     <h2 id="origin">Origin</h2>
@@ -52,7 +54,8 @@
 
     <h2 id="code">Code</h2>
     <p>Here are the core CSS variables:</p>
-<div class="code-block-wrapper"><pre><code>
+<div class="code-block-wrapper">
+<pre><code>
 :root {
   /* Fonts */
   --font-sans: ui-sans-serif, system-ui, sans-serif;
@@ -82,19 +85,14 @@
   --color-primary: #475569;
   --color-accent: #475569;
 
-  /* Radius */
+  /* Other */
   --radius: 0.5rem;
-
-  /* Shadow */
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06);
-
-  /* Borders */
   --border: 1px;
-
-  /* Layout */
   --container: 960px;
 }
-</code></pre></div>
+</code></pre>
+</div>
 
     <p>And here is <a href="llm.css">the full code</a> (you can also <a href="llm.css" download>download the full code</a>):</p>
     <div class="code-block-wrapper full-code"><pre><code></code></pre></div>
@@ -102,6 +100,34 @@
     <h2 id="cdn">CDN</h2>
     <p>You can also use the file through a CDN. If you're using it with an LLM, you still might want to give it the code so it knows what's inside (or you might want to at least mention it's a class-light CSS framework). If you're using it with an agent, you might want to have it fetch the file and read the contents of the file first before using it.</p>
     <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/jhonkaman/llm-css/llm.css&quot;&gt;</code></pre>
+
+    <h2 id="dark-mode">Dark Mode</h2>
+    <p>If you'd like the user to be able to switch to dark mode, you can add this to the end of llm.css. If you'd like the app to be in dark mode all of the time, delete the media query wrapping the CSS.</p>
+<div class="code-block-wrapper">
+<pre><code>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #111827;
+    --color-surface: #1f2937;
+    --color-text: #f3f4f6;
+    --color-muted: #9ca3af;
+    --color-border: #374151;
+  }
+
+  a {
+    color: var(--color-muted);
+  }
+
+  .button-outline, button.button-outline {
+    color: var(--color-muted);
+  }
+
+  mark {
+    background: #374151;
+  }
+}
+</code></pre>
+</div>
   </div>
 
   <footer style="text-align: center;">
@@ -109,44 +135,6 @@
     <small>&copy; 2026 Javier Alvarado. Made with ⚡️ on planet Earth.</small>
   </footer>
 
-<script>
-  // Add copy buttons to all code blocks
-  document.querySelectorAll('.code-block-wrapper').forEach((wrapper, index) => {
-    const code = wrapper.querySelector('code');
-
-    // Trim leading and trailing whitespace
-    code.textContent = code.textContent.trim();
-
-    const btn = document.createElement('button');
-    btn.className = 'copy-btn';
-    btn.textContent = 'Copy';
-    btn.addEventListener('click', () => {
-      navigator.clipboard.writeText(code.textContent).then(() => {
-        btn.textContent = 'Copied!';
-        btn.classList.add('copied');
-        setTimeout(() => {
-          btn.textContent = 'Copy';
-          btn.classList.remove('copied');
-        }, 2000);
-      });
-    });
-    wrapper.appendChild(btn);
-  });
-
-  // Fetch and inject llm.css into second code block
-  fetch('llm.css')
-    .then(response => response.text())
-    .then(css => {
-      const preCodeBlocks = document.querySelectorAll('pre code');
-      if (preCodeBlocks.length >= 2) {
-        preCodeBlocks[1].textContent = css;
-      }
-    });
-
-  // Add asterisk to title if URL doesn't contain jhonkaman
-  if (!window.location.href.includes('jhonkaman')) {
-    document.title = '🟢 ' + document.title;
-  }
-</script>
+  <script src="main.js"></script>
 </body>
 </html>
