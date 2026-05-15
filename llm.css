@@ -12,8 +12,8 @@
   --text-lg: 1.125rem;
   --text-xl: 1.25rem;
   --text-2xl: 1.5rem;
-  --text-3xl: 2rem;
-  --text-4xl: 2.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
 
   --space-1: 0.25rem;
   --space-2: 0.5rem;
@@ -244,7 +244,7 @@ dialog {
 }
 
 dialog > :first-child {
-  margin-top: .83em;
+  margin-top: 1rem;
 }
 
 dialog:focus-visible {
