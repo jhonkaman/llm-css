@@ -98,6 +98,12 @@ a:hover {
   opacity: 0.92;
 }
 
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
 pre {
   background: var(--color-surface);
   border: var(--border) solid var(--color-border);
@@ -163,6 +169,17 @@ label {
   margin-bottom: var(--space-2);
 }
 
+fieldset {
+  border: none;
+  margin: var(--space-6) 0 0;
+  padding: 0;
+}
+
+legend {
+  font-weight: 500;
+  margin-bottom: var(--space-2);
+}
+
 input, textarea, select {
   background: transparent;
   border: var(--border) solid var(--color-border);
@@ -220,17 +237,6 @@ input[type="file"]:disabled::file-selector-button {
 textarea {
   min-height: 120px;
   resize: vertical;
-}
-
-fieldset {
-  border: none;
-  margin: var(--space-6) 0 0;
-  padding: 0;
-}
-
-legend {
-  font-weight: 500;
-  margin-bottom: var(--space-2);
 }
 
 /* DIALOGS */
