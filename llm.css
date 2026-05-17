@@ -3,6 +3,7 @@
 /* VARIABLES */
 :root {
   --font-sans: ui-sans-serif, system-ui, sans-serif;
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
   --leading-tight: 1.2;
   --leading-normal: 1.5;
@@ -21,13 +22,20 @@
   --space-6: 1.5rem;
   --space-8: 2rem;
 
-  --color-bg: #ffffff;
-  --color-surface: #f9fafb;
-  --color-text: #111827;
-  --color-muted: #6b7280;
-  --color-border: #d1d5db;
-  --color-primary: #475569;
-  --color-accent: #475569;
+  --white: #ffffff;
+  --gray-50: #f9fafb;
+  --gray-300: #d1d5db;
+  --gray-500: #6b7280;
+  --gray-900: #111827;
+  --slate-600: #475569;
+
+  --color-bg: var(--white);
+  --color-surface: var(--gray-50);
+  --color-text: var(--gray-900);
+  --color-muted: var(--gray-500);
+  --color-border: var(--gray-300);
+  --color-primary: var(--slate-600);
+  --color-accent: var(--slate-600);
 
   --border: 1px;
   --container: 960px;
