@@ -35,3 +35,25 @@
   font-family: var(--font-mono);
   font-size: var(--text-sm);
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #111827;
+    --color-surface: #1f2937;
+    --color-text: #f3f4f6;
+    --color-muted: #9ca3af;
+    --color-border: #374151;
+  }
+
+  a {
+    color: var(--color-muted);
+  }
+
+  .button-outline, button.button-outline {
+    color: var(--color-muted);
+  }
+
+  mark {
+    background: #374151;
+  }
+}
