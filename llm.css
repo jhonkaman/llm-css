@@ -41,6 +41,16 @@
   --container: 960px;
   --radius: 0.5rem;
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06);
+
+  --font-thin: 100;
+  --font-extralight: 200;
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  --font-black: 900;
 }
 
 /* ELEMENTS */
@@ -338,15 +348,15 @@ a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visib
 .italic { font-style: italic !important; }
 .not-italic { font-style: normal !important; }
 
-.font-thin { font-weight: 100 !important; }
-.font-extralight { font-weight: 200 !important; }
-.font-light { font-weight: 300 !important; }
-.font-normal { font-weight: 400 !important; }
-.font-medium { font-weight: 500 !important; }
-.font-semibold { font-weight: 600 !important; }
-.font-bold { font-weight: 700 !important; }
-.font-extrabold { font-weight: 800 !important; }
-.font-black { font-weight: 900 !important; }
+.font-thin { font-weight: var(--font-thin) !important; }
+.font-extralight { font-weight: var(--font-extralight) !important; }
+.font-light { font-weight: var(--font-light) !important; }
+.font-normal { font-weight: var(--font-normal) !important; }
+.font-medium { font-weight: var(--font-medium) !important; }
+.font-semibold { font-weight: var(--font-semibold) !important; }
+.font-bold { font-weight: var(--font-bold) !important; }
+.font-extrabold { font-weight: var(--font-extrabold) !important; }
+.font-black { font-weight: var(--font-black) !important; }
 
 .text-center { text-align: center !important; }
 .text-start { text-align: start !important; }
