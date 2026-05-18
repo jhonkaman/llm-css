@@ -333,15 +333,20 @@ a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visib
 .uppercase { text-transform: uppercase !important; }
 .lowercase { text-transform: lowercase !important; }
 .capitalize { text-transform: capitalize !important; }
-.nocase { text-transform: none !important; }
+.normal-case { text-transform: none !important; }
 
 .italic { font-style: italic !important; }
 .not-italic { font-style: normal !important; }
 
-.bold { font-weight: bold !important; }
-.bolder { font-weight: bolder !important; }
-.lighter { font-weight: lighter !important; }
-.not-bold { font-weight: normal !important; }
+.font-thin { font-weight: 100 !important; }
+.font-extralight { font-weight: 200 !important; }
+.font-light { font-weight: 300 !important; }
+.font-normal { font-weight: 400 !important; }
+.font-medium { font-weight: 500 !important; }
+.font-semibold { font-weight: 600 !important; }
+.font-bold { font-weight: 700 !important; }
+.font-extrabold { font-weight: 800 !important; }
+.font-black { font-weight: 900 !important; }
 
 .text-center { text-align: center !important; }
 .text-start { text-align: start !important; }
