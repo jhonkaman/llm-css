@@ -232,6 +232,12 @@ input[type="checkbox"], input[type="radio"], input[type="range"], progress {
   accent-color: var(--color-accent);
 }
 
+input[type="color"] {
+  cursor: pointer;
+  /* height: 2.5rem; */
+  padding: 0.25rem;
+}
+
 input[type="file"] {
   border: var(--border) solid var(--color-border);
   cursor: pointer;
